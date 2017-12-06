@@ -26,8 +26,8 @@ namespace IdentityServerClient
                 {
                     options.Authority = "http://localhost/identityserver";
                     options.RequireHttpsMetadata = false;
-
                     options.ApiName = "api1";
+                    options.JwtValidationClockSkew = TimeSpan.Zero;
                 });
         }
 
